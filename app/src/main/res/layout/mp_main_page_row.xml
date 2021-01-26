@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mpAreaID"
+            android:text="ব্রাহ্মণবাড়িয়া-১"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mpImageID"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/sajib"
+            app:civ_border_width="@dimen/cardview_default_elevation"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/mpNameID"
+            android:text="মো: সজীবুর রহমান সজীব"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/mpTitleID"
+            android:text="সংসদ সদস্য, আসন-২৪৩"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/mpUpozilaID"
+            android:text="নির্বাচনী উপজেলা: নাসিরনগর"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_stars"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mpPartyID"
+            android:text="পার্টি:  বাংলাদেশ আওয়ামীলীগ"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_stars"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/mpDesID"
+            android:text="@string/mp_des"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

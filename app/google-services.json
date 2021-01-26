@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618817919363",
+    "project_id": "our-brahmanbaria-830f5",
+    "storage_bucket": "our-brahmanbaria-830f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618817919363:android:453f31c29863a5b1c27eb6",
+        "android_client_info": {
+          "package_name": "com.techsajib.amaderbbaria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618817919363-fk1758v7p2fja3o7l7cmhriqb9og6dvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDeh0ny1Fsja82a6FiMsyAo4DDA6i3pSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618817919363-fk1758v7p2fja3o7l7cmhriqb9og6dvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

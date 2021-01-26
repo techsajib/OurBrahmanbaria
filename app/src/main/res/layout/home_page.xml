@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="#F2F2F3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/home_toolbar"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/brahmanbaria"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="8dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <LinearLayout
+                android:layout_gravity="end|center"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#fff"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/hindsiliguri_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/text1" />
+
+                <TextView
+                    android:layout_marginTop="-14dp"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/hindsiliguri_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text2" />
+
+                <TextView
+                    android:layout_marginTop="-14dp"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/hindsiliguri_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.scwang.wave.MultiWaveHeader
+            android:id="@+id/waveHeader"
+            app:mwhStartColor="@color/colorPrimary"
+            app:mwhCloseColor="@color/colorPrimary"
+            app:mwhWaves="MultiWave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="-5dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                app:cardBackgroundColor="#F2F2F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/zilaInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_zila_icon" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/zila"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/upozilaInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_upozila_icon" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/upozila"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/mpInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ic_bdparliament" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/mp"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/leaderInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_leader" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/rp"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#F2F2F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/famousPeopleInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_famousepeople" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fp"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/educationInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_education" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/edu"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/hospitalInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_hospital" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hospital"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/doctorsInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_doctor" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/doctors"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bannerAd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_id">
+            </com.google.android.gms.ads.AdView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#F2F2F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/policeInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_police" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/police"
+                                    android:textColor="@color/colorPrimary"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/fireServiceInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_fireservice" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/fire"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/transportationInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_transport" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/communication"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/touristInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_tourist" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tourist"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#F2F2F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/hotelInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_restaurant" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hotel"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/bankInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_bank" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bank"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/officeInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_office" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/office"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/organizationInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_organization" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/organization"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#F2F2F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/newspaperInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_newspaper" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/newspaper"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/libraryInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_library" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/librarys"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/postalInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_locationmain" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/postal"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/galleryInfoID"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="60dp"
+                                    android:background="#ffffff"
+                                    android:src="@drawable/ic_gallery" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/gallery"
+                                    android:fontFamily="@font/hindsiliguri_medium"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal" />
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

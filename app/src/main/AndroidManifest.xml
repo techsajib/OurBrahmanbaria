@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techsajib.amaderbbaria">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/our_brahmanbaria"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/our_brahmanbaria_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name= "com.google.android.gms.ads.APPLICATION_ID"
+            android:value= ""/>
+
+        <activity
+            android:name="com.techsajib.amaderbbaria.Settings.AboutBrahmanbariaInfo"
+            android:parentActivityName="com.techsajib.amaderbbaria.Settings.SettingsMainPage"/>
+        <activity
+            android:name="com.techsajib.amaderbbaria.Settings.AboutBloodInfo"
+            android:parentActivityName="com.techsajib.amaderbbaria.Settings.SettingsMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Settings.AboutApp"
+            android:parentActivityName="com.techsajib.amaderbbaria.Settings.SettingsMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Settings.AboutDeveloper"
+            android:parentActivityName="com.techsajib.amaderbbaria.Settings.SettingsMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Blood.BloodMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Upozila.UpozilaDetails"
+            android:parentActivityName="com.techsajib.amaderbbaria.Upozila.UpozilaMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Upozila.UpozilaMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Gallery.GalleryMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Postal.PostalMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Library.LibraryMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Newspaper.NewspaperMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Organization.OrganizationDetails"
+            android:parentActivityName="com.techsajib.amaderbbaria.Organization.OrganizationMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Organization.OrganizationMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Office.OfficeMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Bank.BankMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Hotel.HotelMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Tourist.TouristDetails"
+            android:parentActivityName="com.techsajib.amaderbbaria.Tourist.TouristMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Tourist.TouristMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Transportation.TransportationMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.FireService.FireServiceMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Police.PoliceMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Doctors.DoctorsMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Hospital.HospitalMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Education.EducationMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.FamousPeople.FamousPeopleDetails"
+            android:parentActivityName="com.techsajib.amaderbbaria.FamousPeople.FamousPeopleMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.FamousPeople.FamousPeopleMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Leader.LeaderMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.MP.MPMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Settings.SettingsMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Zila.ZilaDetails"
+            android:parentActivityName="com.techsajib.amaderbbaria.Zila.ZilaMainPage" />
+        <activity
+            android:name="com.techsajib.amaderbbaria.Zila.ZilaMainPage"
+            android:parentActivityName="com.techsajib.amaderbbaria.HomePage" />
+
+        <activity android:name="com.techsajib.amaderbbaria.HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.techsajib.amaderbbaria.Splash.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MP.PushNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/brahmanbaria" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/white" />
+
+    </application>
+
+</manifest>
